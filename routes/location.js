@@ -20,11 +20,6 @@ function buildErrorResponse(err) {
   };
 };
 
-function addMessageToSuccessfulQuery(obj, msg) {
-  var ret = obj;
-  ret.message = msg;
-  return ret;
-};
 
 /* GET locations listing. */
 router.get('/', function(req, res, next) {

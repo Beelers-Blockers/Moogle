@@ -12,31 +12,30 @@ var meatSchema = new mongoose.Schema({
 });
 
 // burger subSchema which resides in locationSchema
-var burgersSchema = new mongoose.Schema({
+var burgerSchema = new mongoose.Schema({
   name: String,
   description: String,
   rating: Number,
   veggie: Boolean,
-  vegan: Boolean,
   image: String,
   meat: [meatSchema]
 });
 
 // sides subSchema which resides in locationSchema
-var sidesSchema = new mongoose.Schema({
+var sideSchema = new mongoose.Schema({
   duckFries: Boolean,
   tots: Boolean,
   macAndCheese: Boolean
 });
 
 // allergies subSchema which resides in locationSchema
-var allergiesSchema = new mongoose.Schema({
+var allergySchema = new mongoose.Schema({
   accommodates: Boolean,
   glutenFree: Boolean
 });
 
 // challenges subSchema which resides in locationSchema
-var challengesSchema = new mongoose.Schema({
+var challengeSchema = new mongoose.Schema({
   exists: Boolean,
   name: String,
   description: String
@@ -64,10 +63,10 @@ var locationSchema = new mongoose.Schema({
   latenight: Boolean,
   outdoor: Boolean,
   image: String,
-  burgers: [burgersSchema],
-  sides: [sidesSchema],
-  allergies: [allergiesSchema],
-  challenges: [challengesSchema],
+  burgers: [burgerSchema],
+  sides: [sideSchema],
+  allergies: [allergySchema],
+  challenges: [challengeSchema],
   hours: [hoursSchema]
 });
 
