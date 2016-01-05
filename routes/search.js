@@ -19,13 +19,7 @@ function buildErrorResponse(err) {
   };
 };
 
-function addMessageToSuccessfulQuery(obj, msg) {
-  var ret = obj;
-  ret.message = msg;
-  return ret;
-};
-
-/* GET all searches. */
+// GET all searches.
 router.get('/', function(req, res, next) {
   model.find(function(err, searches) {
     if (err) {

@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 // default second tier categories which resides in search Schema
-var defaultCriteriaSubschema = new mongoose.Schema({
+var defaultCriteriaSchema = new mongoose.Schema({
   outdoor: Boolean,
   latenight: Boolean,
   byob: Boolean,
@@ -9,101 +9,104 @@ var defaultCriteriaSubschema = new mongoose.Schema({
 });
 
 // challenges subschema which resides in search Schema
-var challengesSubschema = new mongoose.Schema({
+var challengeSchema = new mongoose.Schema({
   icon: String,
   imageURL: String,
   name: String,
   description: String,
   challenges: Boolean,
-  defaultCriteria: [defaultCriteriaSubschema]
+  defaultCriteria: [defaultCriteriaSchema]
 });
 
 // foodtruck subschema which resides in search Schema
-var foodtruckSubschema = new mongoose.Schema({
+var foodtruckSchema = new mongoose.Schema({
   icon: String,
   imageURL: String,
   name: String,
   description: String,
   foodtruck: Boolean,
-  defaultCriteria: [defaultCriteriaSubschema]
+  defaultCriteria: [defaultCriteriaSchema]
 });
 
 // veggiesVegan subschema which resides in search Schema
-var veggieVeganSubschema = new mongoose.Schema({
+var veggieSchema = new mongoose.Schema({
   icon: String,
   imageURL: String,
   name: String,
   description: String,
-  veggieVegan: Boolean,
-  defaultCriteria: [defaultCriteriaSubschema]
+  veggie: Boolean,
+  defaultCriteria: [defaultCriteriaSchema]
 });
 
 // allergies subschema which resides in search Schema
-var allergiesSubschema = new mongoose.Schema({
+var allergySchema = new mongoose.Schema({
   icon: String,
   imageURL: String,
   name: String,
   description: String,
-  accomodates: Boolean,
+  accommodates: Boolean,
   glutenFree: Boolean,
-  defaultCriteria: [defaultCriteriaSubschema]
+  defaultCriteria: [defaultCriteriaSchema]
 });
 
 // meat subschema which resides in search Schema
-var meatSubschema = new mongoose.Schema({
+var meatSchema = new mongoose.Schema({
   icon: String,
   imageURL: String,
   name: String,
   description: String,
-  kobe: Boolean,
   grassfed: Boolean,
-  lamb: Boolean,
+  kobe: Boolean,
+  bison: Boolean,
+  angus: Boolean,
   turkey: Boolean,
-  defaultCriteria: [defaultCriteriaSubschema]
+  lamb: Boolean,
+  elk: Boolean,
+  defaultCriteria: [defaultCriteriaSchema]
 });
 
 // top (popular) subschema which resides in search Schema
-var topSubschema = new mongoose.Schema({
+var topSchema = new mongoose.Schema({
   icon: String,
   imageURL: String,
   name: String,
   description: String,
   rating: Number,
-  defaultCriteria: [defaultCriteriaSubschema]
+  defaultCriteria: [defaultCriteriaSchema]
 });
 
 // sides subschema which resides in search Schema
-var sidesSubschema = new mongoose.Schema({
+var sideSchema = new mongoose.Schema({
   icon: String,
   imageURL: String,
   name: String,
   description: String,
-  duckfat: Boolean,
-  macnCheese: Boolean,
-  tatterTots: Boolean,
-  defaultCriteria: [defaultCriteriaSubschema]
+  duckFries: Boolean,
+  macAndCheese: Boolean,
+  tots: Boolean,
+  defaultCriteria: [defaultCriteriaSchema]
 });
 
 // cost subschema which resides in search Schema
-var costSubschema = new mongoose.Schema({
+var costSchema = new mongoose.Schema({
   icon: String,
   imageURL: String,
   name: String,
   description: String,
   cost: Number,
-  defaultCriteria: [defaultCriteriaSubschema]
+  defaultCriteria: [defaultCriteriaSchema]
 });
 
 // search schema
 var searchSchema = new mongoose.Schema({
-  challenges: [challengesSubschema],
-  foodtruck: [foodtruckSubschema],
-  veggieVegan: [veggieVeganSubschema],
-  allergies: [allergiesSubschema],
-  meat: [meatSubschema],
-  top: [topSubschema],
-  sides: [sidesSubschema],
-  cost: [costSubschema]
+  challenges: [challengeSchema],
+  foodtruck: [foodtruckSchema],
+  veggie: [veggieSchema],
+  allergies: [allergySchema],
+  meats: [meatSchema],
+  top: [topSchema],
+  sides: [sideSchema],
+  cost: [costSchema]
 });
 
 module.exports = mongoose.model('Search', searchSchema);
