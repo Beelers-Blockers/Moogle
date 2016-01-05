@@ -1,9 +1,10 @@
 var express = require('express');
+var router = express.Router();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var model = require('../models/Location');
 var User = require('../models/User');
-var Search = require('../models/Search');
-var router = express.Router();
+
 
 // configure passport
 passport.use(new LocalStrategy(User.authenticate()));
@@ -15,7 +16,7 @@ function buildErrorResponse(err) {
   return {
     message: err,
     status: 500,
-    note: 'This response was generated due to a user error'
+    note: 'This response was generated due to user error.'
   };
 };
 
@@ -25,70 +26,67 @@ function addMessageToSuccessfulQuery(obj, msg) {
   return ret;
 };
 
-/* GET all searches. */
+/* GET locations listing. */
 router.get('/', function(req, res, next) {
-  model.find(function(err, searches) {
+  model.find(function(err, locations) {
     if (err) {
       res.json(buildErrorResponse(err));
-    }
-    else {
-      res.json(searches);
+    } else {
+      res.json(locations);
     }
   });
 });
 
-// GET search by id
 router.get('/:id', function(req, res, next) {
-  model.findById(req.params.id, function(err, search) {
+  model.findById(req.params.id, function(err, location) {
     if (err) {
       res.json(buildErrorResponse(err));
-    }
-      else {
-      res.json(search);
+    } else {
+      res.json(location);
     }
   });
 });
 
-// CREATE search
 router.post('/', function(req, res, next) {
-  model.create(req.body, function(err, search) {
+  model.create(req.body, function(err, location) {
     if (err) {
       res.json(buildErrorResponse(err));
     } else {
-      res.json(search);
+      res.json(location);
     }
   });
 });
 
-// UPDATE search by id
-router.put('/:id', function(req, res) {
-  model.findbyIdAndUpdate(req.params.id, req.body, function(err, search) {
+router.put('/:id', function(req, res, next) {
+  model.findByIdAndUpdate(req.params.id, req.body, function(err, location) {
     if (err) {
       res.json(buildErrorResponse(err));
     } else {
-      res.json(search);
-    }
-  });
-});
-router.patch('/:id', function(req, res) {
-  model.findbyIdAndUpdate(req.params.id, req.body, function(err, search) {
-    if (err) {
-      res.json(buildErrorResponse(err));
-    } else {
-      res.json(search);
+      res.json(location);
     }
   });
 });
 
-// DESTROY search by id
-router.delete('/:id', function(req, res) {
-  model.findByIdAndRemove(req.params.id, req.body, function(err, search) {
+router.patch('/:id', function(req, res, next) {
+  model.findByIdAndUpdate(req.params.id, req.body, function(err, location) {
     if (err) {
       res.json(buildErrorResponse(err));
     } else {
-      res.json(search);
+      res.json(location);
     }
   });
 });
+
+
+router.delete('/:id', function(req, res, next) {
+  model.findByIdAndRemove(req.params.id, req.body, function(err, location) {
+    if (err) {
+      res.json(buildErrorResponse(err));
+    } else {
+      res.json(location);
+    }
+  });
+});
+
 
 module.exports = router;

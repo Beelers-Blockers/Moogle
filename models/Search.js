@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 
+// default second tier categories which resides in search Schema
 var defaultCriteriaSubschema = new mongoose.Schema({
   outdoor: Boolean,
   latenight: Boolean,
@@ -7,6 +8,7 @@ var defaultCriteriaSubschema = new mongoose.Schema({
   alcohol: Boolean
 });
 
+// challenges subschema which resides in search Schema
 var challengesSubschema = new mongoose.Schema({
   icon: String,
   imageURL: String,
@@ -16,6 +18,7 @@ var challengesSubschema = new mongoose.Schema({
   defaultCriteria: [defaultCriteriaSubschema]
 });
 
+// foodtruck subschema which resides in search Schema
 var foodtruckSubschema = new mongoose.Schema({
   icon: String,
   imageURL: String,
@@ -25,6 +28,7 @@ var foodtruckSubschema = new mongoose.Schema({
   defaultCriteria: [defaultCriteriaSubschema]
 });
 
+// veggiesVegan subschema which resides in search Schema
 var veggieVeganSubschema = new mongoose.Schema({
   icon: String,
   imageURL: String,
@@ -34,6 +38,7 @@ var veggieVeganSubschema = new mongoose.Schema({
   defaultCriteria: [defaultCriteriaSubschema]
 });
 
+// allergies subschema which resides in search Schema
 var allergiesSubschema = new mongoose.Schema({
   icon: String,
   imageURL: String,
@@ -44,6 +49,7 @@ var allergiesSubschema = new mongoose.Schema({
   defaultCriteria: [defaultCriteriaSubschema]
 });
 
+// meat subschema which resides in search Schema
 var meatSubschema = new mongoose.Schema({
   icon: String,
   imageURL: String,
@@ -56,6 +62,7 @@ var meatSubschema = new mongoose.Schema({
   defaultCriteria: [defaultCriteriaSubschema]
 });
 
+// top (popular) subschema which resides in search Schema
 var topSubschema = new mongoose.Schema({
   icon: String,
   imageURL: String,
@@ -65,6 +72,7 @@ var topSubschema = new mongoose.Schema({
   defaultCriteria: [defaultCriteriaSubschema]
 });
 
+// sides subschema which resides in search Schema
 var sidesSubschema = new mongoose.Schema({
   icon: String,
   imageURL: String,
@@ -76,6 +84,7 @@ var sidesSubschema = new mongoose.Schema({
   defaultCriteria: [defaultCriteriaSubschema]
 });
 
+// cost subschema which resides in search Schema
 var costSubschema = new mongoose.Schema({
   icon: String,
   imageURL: String,
@@ -85,7 +94,7 @@ var costSubschema = new mongoose.Schema({
   defaultCriteria: [defaultCriteriaSubschema]
 });
 
-
+// search schema
 var searchSchema = new mongoose.Schema({
   challenges: [challengesSubschema],
   foodtruck: [foodtruckSubschema],
