@@ -13,8 +13,9 @@ var LocalStrategy = require('passport-local').Strategy;
 
 require("./db/database");
 
-var routes = require('./routes/index');
+var index = require('./routes/index');
 var user = require('./routes/user');
+var location = require('./routes/location');
 var search = require('./routes/search');
 
 
@@ -25,6 +26,7 @@ app.use(require('express-session')({
   resave: false,
   saveUninitialized: false
 }));
+//
 app.use(passport.initialize());
 app.use(passport.session());
 // done enabling sessions
@@ -49,8 +51,9 @@ app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('/', index);
 app.use('/user', user);
+app.use('/location', location);
 app.use('/search', search);
 
 // catch 404 and forward to error handler
