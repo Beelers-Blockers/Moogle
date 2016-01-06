@@ -1,0 +1,805 @@
+{
+  "challenges": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Graze",
+    "description": "Sit irure ex eu incididunt culpa esse consectetur quis velit in ex veniam amet.",
+    "challenges": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "foodtruck": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Yummy Devour",
+    "description": "Eiusmod duis esse tempor quis id esse aute non pariatur mollit irure ex.",
+    "foodtruck": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": false
+    }
+  },
+  "veggie": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Graze",
+    "description": "Amet velit labore id esse proident veniam amet duis deserunt culpa irure et eiusmod.",
+    "veggie": false,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "allergies": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delectable Devour",
+    "description": "Aliqua in dolor velit anim reprehenderit.",
+    "accommodates": true,
+    "glutenFree": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": true,
+      "alcohol": false
+    }
+  },
+  "meats": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delectable Chew",
+    "description": "Commodo id culpa nisi ad anim Lorem culpa id ea anim est.",
+    "grassfed": true,
+    "kobe": true,
+    "bison": true,
+    "angus": true,
+    "turkey": true,
+    "lamb": false,
+    "elk": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": true,
+      "alcohol": false
+    }
+  },
+  "top": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Graze",
+    "description": "Ad est magna incididunt excepteur deserunt deserunt ipsum fugiat.",
+    "rating": 2,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": true,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "sides": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Heavenly Graze",
+    "description": "Excepteur veniam adipisicing ea dolor.",
+    "duckFries": true,
+    "macAndCheese": true,
+    "tots": true,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": true,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "cost": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delicious Graze",
+    "description": "Pariatur nisi ipsum veniam enim eiusmod dolore ea proident cupidatat.",
+    "cost": 2,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": true,
+      "byob": false,
+      "alcohol": true
+    }
+  }
+},
+{
+  "challenges": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Eat",
+    "description": "Sunt sunt do ea occaecat ex eiusmod in dolor est.",
+    "challenges": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": false
+    }
+  },
+  "foodtruck": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delicious Graze",
+    "description": "Mollit laborum nisi enim adipisicing deserunt.",
+    "foodtruck": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": false
+    }
+  },
+  "veggie": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Devour",
+    "description": "Occaecat in consectetur sint occaecat ex veniam mollit.",
+    "veggie": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": false,
+      "alcohol": false
+    }
+  },
+  "allergies": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delectable Graze",
+    "description": "Est aliqua adipisicing elit occaecat fugiat eiusmod id in amet cupidatat enim.",
+    "accommodates": false,
+    "glutenFree": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "meats": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Yummy Devour",
+    "description": "Fugiat exercitation cillum nulla excepteur tempor est non sunt magna ad duis.",
+    "grassfed": true,
+    "kobe": true,
+    "bison": false,
+    "angus": false,
+    "turkey": true,
+    "lamb": false,
+    "elk": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": false,
+      "alcohol": false
+    }
+  },
+  "top": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Heavenly Graze",
+    "description": "Do dolor minim do velit eu cupidatat dolore proident officia Lorem excepteur deserunt.",
+    "rating": 0,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": true,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "sides": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delicious Eat",
+    "description": "Veniam tempor est nisi exercitation tempor consectetur labore anim.",
+    "duckFries": true,
+    "macAndCheese": false,
+    "tots": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": false,
+      "alcohol": true
+    }
+  },
+  "cost": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Graze",
+    "description": "Aute irure excepteur ea irure nulla fugiat labore officia do esse adipisicing ea id.",
+    "cost": 1,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": false,
+      "alcohol": true
+    }
+  }
+},
+{
+  "challenges": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Heavenly Eat",
+    "description": "Adipisicing irure exercitation eu officia ea amet qui consequat.",
+    "challenges": true,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "foodtruck": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delicious Devour",
+    "description": "Velit adipisicing labore amet aliquip dolore mollit duis quis.",
+    "foodtruck": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": false,
+      "alcohol": false
+    }
+  },
+  "veggie": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Yummy Chew",
+    "description": "Eu velit nulla Lorem ea aute et non nisi fugiat et.",
+    "veggie": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": false
+    }
+  },
+  "allergies": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Yummy Devour",
+    "description": "Mollit deserunt velit ut dolor elit mollit consectetur culpa culpa enim adipisicing elit laboris ex.",
+    "accommodates": true,
+    "glutenFree": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "meats": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Yummy Graze",
+    "description": "Irure Lorem qui nisi ad magna.",
+    "grassfed": false,
+    "kobe": true,
+    "bison": false,
+    "angus": true,
+    "turkey": false,
+    "lamb": true,
+    "elk": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": false,
+      "alcohol": true
+    }
+  },
+  "top": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Heavenly Eat",
+    "description": "Irure occaecat enim sunt qui irure Lorem.",
+    "rating": 3,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "sides": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Yummy Devour",
+    "description": "Nulla dolore occaecat ex ea velit do.",
+    "duckFries": false,
+    "macAndCheese": true,
+    "tots": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "cost": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delicious Devour",
+    "description": "Proident adipisicing exercitation est ipsum qui voluptate id ad.",
+    "cost": 3,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": false
+    }
+  }
+},
+{
+  "challenges": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Eat",
+    "description": "Veniam proident consequat Lorem cillum voluptate.",
+    "challenges": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": false,
+      "alcohol": false
+    }
+  },
+  "foodtruck": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Meaty Graze",
+    "description": "Do nostrud fugiat labore excepteur reprehenderit esse et officia anim nulla dolore esse.",
+    "foodtruck": true,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": true,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "veggie": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Chew",
+    "description": "Eiusmod occaecat aute sint pariatur ad nostrud sint qui dolore ea ullamco consequat fugiat.",
+    "veggie": true,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "allergies": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Graze",
+    "description": "Lorem officia excepteur tempor dolore sunt.",
+    "accommodates": true,
+    "glutenFree": true,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "meats": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Meaty Devour",
+    "description": "Consequat exercitation qui adipisicing Lorem et dolor voluptate commodo quis ex.",
+    "grassfed": false,
+    "kobe": false,
+    "bison": false,
+    "angus": true,
+    "turkey": true,
+    "lamb": true,
+    "elk": true,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "top": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delectable Devour",
+    "description": "Adipisicing et dolore consequat do elit mollit elit cupidatat deserunt sunt eiusmod aute aliquip ex.",
+    "rating": 1,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": true,
+      "alcohol": false
+    }
+  },
+  "sides": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Meaty Graze",
+    "description": "Tempor ad incididunt adipisicing ipsum reprehenderit ea eiusmod mollit occaecat qui aute velit et sunt.",
+    "duckFries": false,
+    "macAndCheese": true,
+    "tots": false,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": false,
+      "byob": false,
+      "alcohol": false
+    }
+  },
+  "cost": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Graze",
+    "description": "Dolor dolor tempor officia sit commodo veniam veniam consectetur irure.",
+    "cost": 4,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": false,
+      "byob": true,
+      "alcohol": false
+    }
+  }
+},
+{
+  "challenges": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Heavenly Chew",
+    "description": "Nisi sunt do fugiat incididunt incididunt.",
+    "challenges": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": false,
+      "alcohol": false
+    }
+  },
+  "foodtruck": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delectable Eat",
+    "description": "Elit amet officia consequat non id proident.",
+    "foodtruck": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "veggie": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delicious Devour",
+    "description": "Fugiat commodo incididunt duis sint aute Lorem laborum deserunt.",
+    "veggie": true,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "allergies": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delectable Devour",
+    "description": "Labore commodo proident culpa quis et est sit fugiat non officia nulla duis.",
+    "accommodates": true,
+    "glutenFree": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "meats": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delectable Graze",
+    "description": "Mollit sint adipisicing occaecat anim exercitation qui do anim dolore cupidatat et.",
+    "grassfed": false,
+    "kobe": true,
+    "bison": true,
+    "angus": true,
+    "turkey": true,
+    "lamb": true,
+    "elk": false,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": true,
+      "byob": false,
+      "alcohol": true
+    }
+  },
+  "top": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Meaty Chew",
+    "description": "Sit excepteur labore in do aute.",
+    "rating": 4,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": false,
+      "alcohol": false
+    }
+  },
+  "sides": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Heavenly Chew",
+    "description": "Sunt aute tempor qui tempor esse consectetur id labore culpa.",
+    "duckFries": true,
+    "macAndCheese": true,
+    "tots": false,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": true,
+      "byob": false,
+      "alcohol": true
+    }
+  },
+  "cost": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delectable Devour",
+    "description": "Ipsum laboris dolor veniam nulla dolore enim cupidatat mollit eu.",
+    "cost": 3,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  }
+},
+{
+  "challenges": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Eat",
+    "description": "Tempor dolore voluptate in nisi reprehenderit fugiat nulla nisi.",
+    "challenges": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "foodtruck": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Chew",
+    "description": "Consequat Lorem mollit tempor id id anim sunt consequat et sunt sint aliqua.",
+    "foodtruck": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": false,
+      "alcohol": true
+    }
+  },
+  "veggie": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Chew",
+    "description": "Ad minim voluptate consequat sunt labore velit excepteur duis pariatur do et duis mollit.",
+    "veggie": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": true,
+      "alcohol": false
+    }
+  },
+  "allergies": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Meaty Graze",
+    "description": "Enim nostrud labore ullamco minim labore laborum nulla et eiusmod cupidatat voluptate proident.",
+    "accommodates": false,
+    "glutenFree": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": false,
+      "alcohol": true
+    }
+  },
+  "meats": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Meaty Devour",
+    "description": "Velit veniam cupidatat elit amet tempor proident fugiat labore sunt.",
+    "grassfed": true,
+    "kobe": true,
+    "bison": false,
+    "angus": true,
+    "turkey": true,
+    "lamb": false,
+    "elk": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "top": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delicious Eat",
+    "description": "Cupidatat consectetur ut fugiat tempor aliquip aute.",
+    "rating": 1,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": false,
+      "byob": false,
+      "alcohol": false
+    }
+  },
+  "sides": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Eat",
+    "description": "Mollit esse mollit do sint officia do sint cillum cillum deserunt mollit esse non.",
+    "duckFries": true,
+    "macAndCheese": true,
+    "tots": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": true,
+      "alcohol": false
+    }
+  },
+  "cost": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Yummy Eat",
+    "description": "Consectetur eiusmod eiusmod duis non laboris quis excepteur est cillum excepteur.",
+    "cost": 2,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": false,
+      "alcohol": true
+    }
+  }
+},
+{
+  "challenges": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Chew",
+    "description": "Commodo reprehenderit quis adipisicing eiusmod aliqua quis commodo.",
+    "challenges": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": false,
+      "alcohol": true
+    }
+  },
+  "foodtruck": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Heavenly Chew",
+    "description": "Ipsum officia veniam sit incididunt et occaecat et sunt sit in excepteur anim ullamco tempor.",
+    "foodtruck": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": false,
+      "alcohol": false
+    }
+  },
+  "veggie": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Enticing Eat",
+    "description": "Magna sunt voluptate tempor id amet.",
+    "veggie": true,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": true,
+      "byob": false,
+      "alcohol": false
+    }
+  },
+  "allergies": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Yummy Eat",
+    "description": "Aute amet ad ullamco cillum.",
+    "accommodates": true,
+    "glutenFree": false,
+    "defaultCriteria": {
+      "outdoor": true,
+      "latenight": true,
+      "byob": true,
+      "alcohol": true
+    }
+  },
+  "meats": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Meaty Devour",
+    "description": "Non aliquip irure qui adipisicing duis sunt.",
+    "grassfed": false,
+    "kobe": true,
+    "bison": true,
+    "angus": false,
+    "turkey": false,
+    "lamb": false,
+    "elk": false,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": false
+    }
+  },
+  "top": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delicious Chew",
+    "description": "Labore quis aliquip incididunt magna enim irure ex.",
+    "rating": 4,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": false,
+      "alcohol": true
+    }
+  },
+  "sides": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delicious Chew",
+    "description": "Lorem qui eiusmod voluptate sit enim.",
+    "duckFries": false,
+    "macAndCheese": false,
+    "tots": true,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": true,
+      "byob": true,
+      "alcohol": false
+    }
+  },
+  "cost": {
+    "icon": "/images/dummy.png",
+    "imageURL": "/images/dummy.png",
+    "name": "The Delicious Devour",
+    "description": "Nisi non dolore tempor nisi adipisicing.",
+    "cost": 2,
+    "defaultCriteria": {
+      "outdoor": false,
+      "latenight": false,
+      "byob": true,
+      "alcohol": true
+    }
+  }
+}
