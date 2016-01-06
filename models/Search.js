@@ -14,7 +14,6 @@ var challengeSchema = new mongoose.Schema({
   imageURL: String,
   name: String,
   description: String,
-  challenges: Boolean,
   defaultCriteria: [defaultCriteriaSchema]
 });
 
@@ -24,7 +23,6 @@ var foodtruckSchema = new mongoose.Schema({
   imageURL: String,
   name: String,
   description: String,
-  foodtruck: Boolean,
   defaultCriteria: [defaultCriteriaSchema]
 });
 
@@ -34,7 +32,6 @@ var veggieSchema = new mongoose.Schema({
   imageURL: String,
   name: String,
   description: String,
-  veggie: Boolean,
   defaultCriteria: [defaultCriteriaSchema]
 });
 

@@ -1,14 +1,14 @@
 var express = require('express');
-var passport = require('passport');
-var LocalStrategy = require('passport-local').Strategy;
+// var passport = require('passport');
+// var LocalStrategy = require('passport-local').Strategy;
 var User = require('../models/User');
 var model = require('../models/Search');
 var router = express.Router();
 
 // configure passport
-passport.use(new LocalStrategy(User.authenticate()));
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+// passport.use(new LocalStrategy(User.authenticate()));
+// passport.serializeUser(User.serializeUser());
+// passport.deserializeUser(User.deserializeUser());
 // end configuration for passport
 
 function buildErrorResponse(err) {

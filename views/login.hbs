@@ -1,12 +1,14 @@
-<h1>Login</h1>
-<section class="ui text container">
+  <section id="login-section">
+    <h1>Login</h1>
+    <div id="login-content">
 
-    <div class="ui segment">
-      <form class="ui input" action="/user/login" method="post">
-        <input type="text" name="username" placeholder="Your Username" value="">
-        <input type="password" name="password" placeholder="Your Password" value="">
-        <input type="submit" value="Login">
-      </form>
     </div>
-    
-</section>
+  </section>
+
+<script type="text/template" id="login-template">
+  <article>
+    <input type="text" id="login-username" value="" placeholder="Your username">
+    <input type="password" id="login-password" value="" placeholder="You Password">
+    <button type="button" id="login-btn">Submit</button>
+  </article>
+</script>
