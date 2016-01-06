@@ -1,0 +1,426 @@
+{
+  "name": "Gluten-Free Cantina",
+  "address": "148 Stockholm Street, Chicago, IL, 60603",
+  "coords": [
+    -87.667071,
+    42.827477
+  ],
+  "phone": "+1 (803) 560-3815",
+  "website": "www.zilodyne.com",
+  "price": 1,
+  "foodtruck": true,
+  "byob": false,
+  "alcohol": true,
+  "latenight": false,
+  "outdoor": false,
+  "image": "https://pixabay.com/static/uploads/photo/2015/06/08/15/13/hamburger-801942_150.jpg",
+  "burgers": [
+    {
+      "name": "The Thick Cheesy Burger",
+      "description": "Veniam eiusmod cillum sunt deserunt in.",
+      "rating": 2,
+      "veggie": true,
+      "image": "https://pixabay.com/static/uploads/photo/2015/09/22/15/42/burger-951896_150.jpg",
+      "meat": {
+        "grassfed": false,
+        "kobe": true,
+        "bison": true,
+        "angus": true,
+        "turkey": false,
+        "lamb": true,
+        "elk": false
+      }
+    }
+  ],
+  "sides": {
+    "duckFries": true,
+    "tots": false,
+    "macAndCheese": true
+  },
+  "allergies": {
+    "accommodates": false,
+    "glutenFree": true
+  },
+  "challenges": {
+    "exists": false,
+    "name": "The Meaty Eat",
+    "description": "Ex do do sit consectetur reprehenderit nulla Lorem commodo incididunt fugiat velit aute sit consequat."
+  },
+  "hours": {
+    "days": "Monday - Sunday",
+    "opening": "11:00AM",
+    "closing": "8:00PM",
+    "closed": false
+  }
+},
+{
+  "name": "Bob's Flesh & Turkey",
+  "address": "888 Krier Place, Chicago, IL, 60641",
+  "coords": [
+    -87.694138,
+    42.154185
+  ],
+  "phone": "+1 (900) 406-2986",
+  "website": "www.zinca.com",
+  "price": 4,
+  "foodtruck": true,
+  "byob": true,
+  "alcohol": false,
+  "latenight": true,
+  "outdoor": true,
+  "image": "https://pixabay.com/static/uploads/photo/2015/09/18/10/12/burger-945322_150.jpg",
+  "burgers": [
+    {
+      "name": "The King Kong Filling Sandwich",
+      "description": "Qui exercitation cupidatat dolor tempor adipisicing veniam proident exercitation ut sint.",
+      "rating": 4,
+      "veggie": false,
+      "image": "https://pixabay.com/static/uploads/photo/2015/09/22/15/42/burger-951896_150.jpg",
+      "meat": {
+        "grassfed": false,
+        "kobe": false,
+        "bison": false,
+        "angus": true,
+        "turkey": false,
+        "lamb": true,
+        "elk": true
+      }
+    },
+    {
+      "name": "The Filling Lubricated Sandwich",
+      "description": "Pariatur officia cupidatat anim et.",
+      "rating": 1,
+      "veggie": true,
+      "image": "https://pixabay.com/static/uploads/photo/2015/09/20/15/02/pizza-burger-948403_150.jpg",
+      "meat": {
+        "grassfed": true,
+        "kobe": true,
+        "bison": true,
+        "angus": true,
+        "turkey": true,
+        "lamb": false,
+        "elk": false
+      }
+    },
+    {
+      "name": "The Meaty Triple Sandwich",
+      "description": "Aliqua sunt non culpa dolor irure minim non sint qui anim nostrud amet enim.",
+      "rating": 2,
+      "veggie": false,
+      "image": "https://pixabay.com/static/uploads/photo/2014/10/23/18/05/burger-500054_150.jpg",
+      "meat": {
+        "grassfed": false,
+        "kobe": false,
+        "bison": false,
+        "angus": false,
+        "turkey": false,
+        "lamb": false,
+        "elk": true
+      }
+    }
+  ],
+  "sides": {
+    "duckFries": false,
+    "tots": false,
+    "macAndCheese": false
+  },
+  "allergies": {
+    "accommodates": true,
+    "glutenFree": false
+  },
+  "challenges": {
+    "exists": true,
+    "name": "The Meaty Graze",
+    "description": "Ea cillum dolor id et aute aute esse ea id."
+  },
+  "hours": {
+    "days": "Monday - Sunday",
+    "opening": "8:00AM",
+    "closing": "9:00PM",
+    "closed": false
+  }
+},
+{
+  "name": "Tom's Burgers",
+  "address": "447 Prospect Avenue, Chicago, IL, 60612",
+  "coords": [
+    -87.728616,
+    42.594767
+  ],
+  "phone": "+1 (941) 421-2537",
+  "website": "www.phormula.com",
+  "price": 3,
+  "foodtruck": true,
+  "byob": false,
+  "alcohol": true,
+  "latenight": true,
+  "outdoor": false,
+  "image": "https://pixabay.com/static/uploads/photo/2015/07/01/07/06/burger-827310_150.jpg",
+  "burgers": [
+    {
+      "name": "The Yummy Cheesy Burger",
+      "description": "Excepteur exercitation nisi irure et cupidatat tempor fugiat sit consequat.",
+      "rating": 1,
+      "veggie": false,
+      "image": "https://pixabay.com/static/uploads/photo/2015/06/08/15/13/hamburger-801942_150.jpg",
+      "meat": {
+        "grassfed": true,
+        "kobe": false,
+        "bison": false,
+        "angus": true,
+        "turkey": true,
+        "lamb": false,
+        "elk": false
+      }
+    },
+    {
+      "name": "The Delectable Double Sandwich",
+      "description": "Qui laboris non sunt incididunt laborum reprehenderit amet anim nostrud ullamco magna consectetur ad.",
+      "rating": 3,
+      "veggie": true,
+      "image": "https://pixabay.com/static/uploads/photo/2015/10/31/12/20/burger-1015440_150.jpg",
+      "meat": {
+        "grassfed": false,
+        "kobe": true,
+        "bison": false,
+        "angus": true,
+        "turkey": true,
+        "lamb": false,
+        "elk": false
+      }
+    }
+  ],
+  "sides": {
+    "duckFries": true,
+    "tots": false,
+    "macAndCheese": false
+  },
+  "allergies": {
+    "accommodates": true,
+    "glutenFree": true
+  },
+  "challenges": {
+    "exists": true,
+    "name": "The Delicious Devour",
+    "description": "Non commodo aliqua occaecat commodo sit velit voluptate."
+  },
+  "hours": {
+    "days": "Monday - Sunday",
+    "opening": "10:00AM",
+    "closing": "6:00PM",
+    "closed": false
+  }
+},
+{
+  "name": "Turbo BBQ",
+  "address": "541 Harway Avenue, Chicago, IL, 60619",
+  "coords": [
+    -87.716009,
+    42.161992
+  ],
+  "phone": "+1 (966) 579-2301",
+  "website": "www.orbixtar.com",
+  "price": 3,
+  "foodtruck": false,
+  "byob": true,
+  "alcohol": true,
+  "latenight": false,
+  "outdoor": false,
+  "image": "https://pixabay.com/static/uploads/photo/2015/09/20/15/02/pizza-burger-948403_150.jpg",
+  "burgers": [
+    {
+      "name": "The Meaty Double Sandwich",
+      "description": "Duis ea labore velit id duis voluptate ipsum dolor irure do non enim Lorem quis.",
+      "rating": 3,
+      "veggie": false,
+      "image": "https://pixabay.com/static/uploads/photo/2015/07/01/07/06/burger-827310_150.jpg",
+      "meat": {
+        "grassfed": true,
+        "kobe": false,
+        "bison": true,
+        "angus": true,
+        "turkey": false,
+        "lamb": true,
+        "elk": true
+      }
+    },
+    {
+      "name": "The Turbo Filling Sandwich",
+      "description": "Exercitation proident ea amet velit est sunt.",
+      "rating": 3,
+      "veggie": false,
+      "image": "https://pixabay.com/static/uploads/photo/2015/07/30/18/23/burger-868145_150.jpg",
+      "meat": {
+        "grassfed": true,
+        "kobe": false,
+        "bison": false,
+        "angus": true,
+        "turkey": true,
+        "lamb": false,
+        "elk": true
+      }
+    }
+  ],
+  "sides": {
+    "duckFries": false,
+    "tots": true,
+    "macAndCheese": false
+  },
+  "allergies": {
+    "accommodates": true,
+    "glutenFree": false
+  },
+  "challenges": {
+    "exists": true,
+    "name": "The Delectable Chew",
+    "description": "Dolore excepteur dolor ut officia qui ullamco pariatur fugiat culpa non esse laboris duis sunt."
+  },
+  "hours": {
+    "days": "Monday - Sunday",
+    "opening": "12:00AM",
+    "closing": "8:00PM",
+    "closed": false
+  }
+},
+{
+  "name": "Gluten-Free Tavern",
+  "address": "796 Rockaway Avenue, Chicago, IL, 60619",
+  "coords": [
+    -87.641291,
+    42.254216
+  ],
+  "phone": "+1 (996) 523-2213",
+  "website": "www.newcube.com",
+  "price": 1,
+  "foodtruck": true,
+  "byob": true,
+  "alcohol": false,
+  "latenight": true,
+  "outdoor": true,
+  "image": "https://pixabay.com/static/uploads/photo/2015/09/01/03/42/food-916397_150.jpg",
+  "burgers": [
+    {
+      "name": "The King Kong Cheesy Sandwich",
+      "description": "Dolor cillum cupidatat voluptate cillum sit irure qui anim esse.",
+      "rating": 0,
+      "veggie": true,
+      "image": "https://pixabay.com/static/uploads/photo/2015/06/08/15/13/hamburger-801942_150.jpg",
+      "meat": {
+        "grassfed": false,
+        "kobe": false,
+        "bison": true,
+        "angus": false,
+        "turkey": true,
+        "lamb": true,
+        "elk": false
+      }
+    },
+    {
+      "name": "The Delicious Smeared Burger",
+      "description": "Consectetur cillum commodo dolore esse magna ea anim fugiat ipsum eu esse.",
+      "rating": 0,
+      "veggie": false,
+      "image": "https://pixabay.com/static/uploads/photo/2015/07/01/07/06/burger-827310_150.jpg",
+      "meat": {
+        "grassfed": true,
+        "kobe": false,
+        "bison": true,
+        "angus": false,
+        "turkey": false,
+        "lamb": false,
+        "elk": true
+      }
+    },
+    {
+      "name": "The Delicious Greasy Sandwich",
+      "description": "Pariatur exercitation sint mollit aliquip sint esse sint quis laboris cillum ad minim adipisicing.",
+      "rating": 3,
+      "veggie": false,
+      "image": "https://pixabay.com/static/uploads/photo/2015/10/13/21/09/sandwich-986799_150.jpg",
+      "meat": {
+        "grassfed": false,
+        "kobe": true,
+        "bison": false,
+        "angus": true,
+        "turkey": true,
+        "lamb": false,
+        "elk": true
+      }
+    }
+  ],
+  "sides": {
+    "duckFries": true,
+    "tots": true,
+    "macAndCheese": false
+  },
+  "allergies": {
+    "accommodates": false,
+    "glutenFree": true
+  },
+  "challenges": {
+    "exists": true,
+    "name": "The Meaty Chew",
+    "description": "Incididunt ad officia culpa magna cupidatat esse sit officia fugiat officia."
+  },
+  "hours": {
+    "days": "Monday - Sunday",
+    "opening": "10:00AM",
+    "closing": "10:00PM",
+    "closed": false
+  }
+},
+{
+  "name": "Old Ben's Pub",
+  "address": "267 Kingston Avenue, Chicago, IL, 60634",
+  "coords": [
+    -87.700073,
+    42.281892
+  ],
+  "phone": "+1 (973) 449-2363",
+  "website": "www.ewaves.com",
+  "price": 4,
+  "foodtruck": false,
+  "byob": false,
+  "alcohol": false,
+  "latenight": true,
+  "outdoor": false,
+  "image": "https://pixabay.com/static/uploads/photo/2015/09/18/10/12/burger-945322_150.jpg",
+  "burgers": [
+    {
+      "name": "The Thick Lubricated Sandwich",
+      "description": "Proident id ut eu aliqua nisi ea nostrud elit ut veniam veniam qui non.",
+      "rating": 0,
+      "veggie": true,
+      "image": "https://pixabay.com/static/uploads/photo/2014/10/23/18/05/burger-500054_150.jpg",
+      "meat": {
+        "grassfed": false,
+        "kobe": true,
+        "bison": false,
+        "angus": false,
+        "turkey": true,
+        "lamb": true,
+        "elk": true
+      }
+    }
+  ],
+  "sides": {
+    "duckFries": true,
+    "tots": false,
+    "macAndCheese": false
+  },
+  "allergies": {
+    "accommodates": false,
+    "glutenFree": true
+  },
+  "challenges": {
+    "exists": false,
+    "name": "The Yummy Graze",
+    "description": "Voluptate cupidatat Lorem mollit in proident."
+  },
+  "hours": {
+    "days": "Monday - Sunday",
+    "opening": "9:00AM",
+    "closing": "9:00PM",
+    "closed": false
+  }
+}
