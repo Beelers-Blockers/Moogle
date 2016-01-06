@@ -51,8 +51,8 @@ app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/user', user);
+app.use('/', user);
+// app.use('/user', user);
 app.use('/location', location);
 app.use('/search', search);
 
