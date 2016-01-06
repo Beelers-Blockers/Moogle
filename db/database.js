@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 
-var connectionString = "mongodb://localhost/Moogle";
+var connectionString = "mongodb://localhost/moogl";
 
 mongoose.connect(connectionString);
 

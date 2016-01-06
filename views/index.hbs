@@ -1,8 +1,37 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
 
+<section id="location-list">
+  <h2>Locations</h2><hr>
+</section>
 
-<script type="text/javascript" src="/javascripts/app.js"></script>
-<script type="text/javascript" src="/javascripts/views/locationView.js"></script>
-<script type="text/javascript" src="/javascripts/collections/locationCollection.js"></script>
+<script type="text/template" id="location-template">
+  <article>
+    <p>
+      <strong>Name: </strong><%= name %>
+    </p>
+    <p>
+      <strong>Website: </strong><%= company %>
+    </p>
+    <p>
+      <strong>Burgers: </strong>
+      <ul>
+        <% for (var burger in burgers) { %>
+          <li><%= burgers[burger]["name"] %> </li>
+          <%= burgers[burger]["description"] %>
+        <% } %>
+        <% if (latenight) { %>
+          <p><strong><em>Yes, we're open late!</em></strong></p>
+        <% } %>
+        <% if (alcohol) { %>
+          <p><strong><em>Yes, we serve alcohol!</em></strong></p>
+        <% } %>
+      </ul><hr>
+    </p>
+  </article>
+</script>
+
 <script type="text/javascript" src="/javascripts/models/locationModel.js"></script>
+<script type="text/javascript" src="/javascripts/collections/locationCollection.js"></script>
+<script type="text/javascript" src="/javascripts/views/locationView.js"></script>
+<script type="text/javascript" src="/javascripts/app.js"></script>
