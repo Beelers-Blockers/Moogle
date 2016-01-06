@@ -11,6 +11,7 @@ app.Collection = Backbone.Collection.extend({
       var view = new app.CollectionView({
         collection: self
       });
+      console.log(view);
     });
     this.fetch();
   }
