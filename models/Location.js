@@ -50,6 +50,7 @@ var hoursSchema = new mongoose.Schema({
 });
 
 // MAIN locationSchema
+// coord order -> lng, lat
 var locationSchema = new mongoose.Schema({
   name: String,
   address: String,
