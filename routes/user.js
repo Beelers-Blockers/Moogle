@@ -1,8 +1,8 @@
-// var express = require('express');
+var express = require('express');
 // // var passport = require('passport');
 // // var LocalStrategy = require('passport-local').Strategy;
-// var User = require('../models/User');
-// var router = express.Router();
+var user = require('../models/User');
+var router = express.Router();
 
 // configure passport
 // passport.use(new LocalStrategy(User.authenticate()));
@@ -10,48 +10,65 @@
 // passport.deserializeUser(User.deserializeUser());
 // end configuration for passport
 
-
-router.get('/', function(req, res){
-  res.render('login', { user: req.user });
+router.get('/', function(req, res, next) {
+  model.find(function(err, users) {
+    if (err) {
+      res.json(buildErrorResponse(err));
+    } else {
+      res.json(users);
+    }
+  });
 });
 
-router.post('/', function(req, res) {
-
-});
-// router.get('/login', function(req, res){
-//   res.render('login', { user: req.user });
-// });
-//
-// router.post('/login', passport.authenticate('local', { failureRedirect: '/user' }), function(req, res) {
-//   res.redirect('/');
-// });
-//
-// router.get('/register', function(req, res){
-//   // res.render('register', { user: req.user });
-// });
-//
-// router.post('/register', function(req, res){
-//   User.register(new User({
-//     username: req.body.username //from the form
-//   }),
-//   req.body.password,
-//   function(err, account) {
-//     if (err) {
-//       return res.render('register', { account: account });
-//     }
-//     // passport.authenticate('local') is a function
-//     passport.authenticate('local')(req, res, function() {
-//       res.redirect('/');
-//     });
-//   });
-//
-// });
-
-router.get('/logout', function(req, res){
-  req.logout();
-  res.redirect('/');
+router.get('/:id', function(req, res, next) {
+  model.findById(req.params.id, function(err, user) {
+    if (err) {
+      res.json(buildErrorResponse(err));
+    } else {
+      res.json(user);
+    }
+  });
 });
 
+router.post('/', function(req, res, next) {
+  model.create(req.body, function(err, user) {
+    if (err) {
+      res.json(buildErrorResponse(err));
+    } else {
+      res.json(user);
+    }
+  });
+});
 
+router.put('/:id', function(req, res, next) {
+  model.findByIdAndUpdate(req.params.id, req.body, function(err, user) {
+    if (err) {
+      res.json(buildErrorResponse(err));
+    } else {
+      res.json(user);
+    }
+  });
+});
+
+router.patch('/:id', function(req, res, next) {
+  model.findByIdAndUpdate(req.params.id, req.body, function(err, user) {
+    if (err) {
+      res.json(buildErrorResponse(err));
+    } else {
+      res.json(user);
+    }
+  });
+});
+
+
+router.delete('/:id', function(req, res, next) {
+  model.findByIdAndRemove(req.params.id, req.body, function(err, user) {
+    if (err) {
+      res.json(buildErrorResponse(err));
+    } else {
+      res.json(user);
+    }
+  });
+});
 
 module.exports = router;
