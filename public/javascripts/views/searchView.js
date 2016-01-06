@@ -21,9 +21,10 @@ app.searchModelView = Backbone.View.extend({
 
 
 app.searchCollectionView = Backbone.View.extend({
-  el: document.getElementById('search-list'),
+  el: $("body"),
   initialize: function() {
     console.log("instantiation of our collection searchView has occurred");
+    this.el.innerHTML = "<h1>Search List</h1>";
     this.render();
   },
   render: function() {

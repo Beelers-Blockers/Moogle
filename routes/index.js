@@ -12,4 +12,8 @@ router.get('/', function(req, res, next) {
   res.render('index', siteData);
 });
 
+// router.get("/", function(req, res, next) {
+//   res.render("search");
+// })
+
 module.exports = router;

@@ -6,8 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 // declare passport
-var passport = require('passport');
-var LocalStrategy = require('passport-local').Strategy;
+// var passport = require('passport');
+// var LocalStrategy = require('passport-local').Strategy;
 // var FacebookStrategy = require('passport-facebook').Strategy;
 // but before the db is loaded
 
@@ -20,23 +20,23 @@ var search = require('./routes/search');
 
 
 var app = express();
-// instantly enable sessions
-app.use(require('express-session')({
-  secret: 'something secret', //kind of like your own salt
-  resave: false,
-  saveUninitialized: false
-}));
+// // instantly enable sessions
+// app.use(require('express-session')({
+//   secret: 'something secret', //kind of like your own salt
+//   resave: false,
+//   saveUninitialized: false
+// }));
+// //
+// app.use(passport.initialize());
+// app.use(passport.session());
+// // done enabling sessions
 //
-app.use(passport.initialize());
-app.use(passport.session());
-// done enabling sessions
-
-// configure passport
-var User = require('./models/User');
-passport.use(new LocalStrategy(User.authenticate()));
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
-// end configuration for passport
+// // configure passport
+// var User = require('./models/User');
+// passport.use(new LocalStrategy(User.authenticate()));
+// passport.serializeUser(User.serializeUser());
+// passport.deserializeUser(User.deserializeUser());
+// // end configuration for passport
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

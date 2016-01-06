@@ -1,7 +1,20 @@
-<h1>Login</h1>
+  <section id="login-section">
+    <h1>Login</h1>
+    <div id="login-content">
 
-<form action="/user/login" method="post">
+    </div>
+  </section>
+
+<script type="text/template" id="login-template">
+  <article>
+    <input type="text" id="login-username" value="" placeholder="Your username">
+    <input type="password" id="login-password" value="" placeholder="You Password">
+    <button type="button" id="login-btn">Submit</button>
+  </article>
+</script>
+
+<!-- <form action="/login" method="post">
   <input type="text" name="username" placeholder="Your Username" value="">
   <input type="password" name="password" placeholder="Your Password" value="">
   <input type="submit" value="Login">
-</form>
+</form> -->
