@@ -2,7 +2,7 @@ var express = require('express');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../models/User');
-var Search = require('../models/Search');
+var model = require('../models/Search');
 var router = express.Router();
 
 // configure passport
