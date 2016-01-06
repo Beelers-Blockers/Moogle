@@ -7,40 +7,30 @@ app.searchModelView = Backbone.View.extend({
       this.render();
   },
   render: function() {
-    var data = this.model;
-    console.log(data);
-    this.$el.append(data.allergies + ' ' + data.foodtruck);
+    console.log("rendering our searchModelView");
+    var data = this.model.attributes;
+    console.log("capturing search template");
+    var searchTemplate = document.getElementById('search-template').innerHTML;
+    console.log("doing more template stuff");
+    var compiledSearchTemplate = _.template(searchTemplate);
+    console.log("New HTML from template and my model");
+    var html = compiledSearchTemplate(data);
+    this.el.innerHTML = this.el.innerHTML + html;
   }
 });
 
 
 app.searchCollectionView = Backbone.View.extend({
-  el: document.getElementById('burgerSearch'),
+  el: document.getElementById('search-list'),
   initialize: function() {
     console.log("instantiation of our collection searchView has occurred");
-    var models = [{
-      challenges: "Hell YES",
-      foodtruck: "sometimes",
-      veggie: "are you feeling lucky?",
-      allergies: "absolutely accommodate",
-      meats: "all the meats",
-      top: "trending to the bottom",
-      sides: "we dig sides",
-      cost: "more than you want to know"
-    },
-    {
-      challenges: "ehh",
-      foodtruck: "affirmative",
-      veggie: "quinoa is cool",
-      allergies: "gluten-free welcome",
-      meats: "grass fed organic",
-      top: "tip-top!!",
-      sides: "fries for days",
-      cost: "dollar dollar bills"
-    }
-  ];
-    console.log(models);
+    this.render();
+  },
+  render: function() {
+    console.log("collection view render has been called");
+    var models = this.collection.models;
     for (var model in models) {
+      console.log(models[model]);
       new app.searchModelView({
         model: models[model],
         el: this.el

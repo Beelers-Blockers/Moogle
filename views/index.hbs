@@ -11,7 +11,7 @@
       <strong>Name: </strong><%= name %>
     </p>
     <p>
-      <strong>Website: </strong><%= company %>
+      <strong>Website: </strong><%= website %>
     </p>
     <p>
       <strong>Burgers: </strong>
@@ -27,6 +27,31 @@
           <p><strong><em>Yes, we serve alcohol!</em></strong></p>
         <% } %>
       </ul><hr>
+    </p>
+  </article>
+</script>
+
+<section id="search-list">
+  <h2>Search Results</h2><hr>
+</section>
+
+
+<script type="text/template" id="search-template">
+  <article>
+    <p>
+      <strong>Challenges: </strong> <%= challenges %>
+    </p>
+    <p>
+      <strong>Foodtruck: </strong> <%= foodtruck %>
+      <ul>
+        <% for (var truck in foodtruck) { %>
+          <li><%= foodtruck[truck]["name"] %><li>
+            <%= foodtruck[truck]["description"] %>
+        <% } %>
+      </ul><hr>
+    </p>
+    <p>
+      <strong>Veggie: </strong> <%= veggie %>
     </p>
   </article>
 </script>
