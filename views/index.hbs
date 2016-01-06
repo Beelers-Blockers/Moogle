@@ -31,7 +31,36 @@
   </article>
 </script>
 
+<section id="search-list">
+  <h2>Search Results</h2><hr>
+</section>
+
+
+<script type="text/template" id="search-template">
+  <article>
+    <p>
+      <strong>Challenges: </strong> <%= challenges %>
+    </p>
+    <p>
+      <strong>Foodtruck: </strong> <%= foodtruck %>
+      <ul>
+        <% for (var truck in foodtruck) { %>
+          <li><%= foodtruck[truck]["name"] %><li>
+            <%= foodtruck[truck]["description"] %>
+        <% } %>
+      </ul><hr>
+    </p>
+    <p>
+      <strong>Veggie: </strong> <%= veggie %>
+    </p>
+  </article>
+</script>
+
+
 <script type="text/javascript" src="/javascripts/models/locationModel.js"></script>
+<script type="text/javascript" src="/javascripts/models/searchModel.js"></script>
 <script type="text/javascript" src="/javascripts/collections/locationCollection.js"></script>
+<script type="text/javascript" src="/javascripts/collections/searchCollection.js"></script>
 <script type="text/javascript" src="/javascripts/views/locationView.js"></script>
+<script type="text/javascript" src="/javascripts/views/searchView.js"></script>
 <script type="text/javascript" src="/javascripts/app.js"></script>
