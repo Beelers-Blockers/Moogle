@@ -8,14 +8,20 @@ app.ModelView = Backbone.View.extend({
   },
   render: function() {
     // var data = this.model.attributes;
-    var data = this.model;
-    console.log(data);
-    this.$el.append(data.name + '\n' + data.hours + '\n');
+    console.log("Rendering ModelView");
+    var data = this.model.attributes;
+    console.log("Grabbing template");
+    var template = document.getElementById('location-template').innerHTML;
+    console.log("Transforming template");
+    var compiledTemplate = _.template(template);
+    console.log("Creating HTML from template and model data...");
+    var html = compiledTemplate(data);
+    this.el.innerHTML = this.el.innerHTML + html;
   }
 });
 
 app.CollectionView = Backbone.View.extend({
-  el: document.getElementsByTagName('body')[0],
+  el: document.getElementById('location-list'),
   initialize: function() {
     console.log("collection view has been instantiated");
     this.render();
@@ -23,17 +29,9 @@ app.CollectionView = Backbone.View.extend({
   render: function() {
     console.log("collection view render has been called");
     // var models = this.collection.models;
-    var models = [{
-      name: "Marty's Burger Palace",
-      hours: "M-F 10am-10pm"
-    },
-    {
-      name: "David's House of Burgs!",
-      hours: "M-Forever 0am-0:30km"
-    }
-  ];
-    console.log(models);
+    var models = this.collection.models;
     for (var model in models) {
+      console.log(models[model]);
       new app.ModelView({
         model: models[model],
         el: this.el
